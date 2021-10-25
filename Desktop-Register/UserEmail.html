@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/CustomStyle.css" rel="stylesheet">
+    <title>Desktop App</title>
+</head>
+
+<body>
+
+    <section class="commsectionfix">
+        <div class="sectionleftfix">
+            <div class="exactboxmed">
+                <div class="exactCenter">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="innerCommonBox">
+                        <img src="images/Email-icon.png" alt="Email" title="Email">
+                        <span class="innercomtitle">What’s your email?</span>
+                        <p class="innercomdetails">We need this to verify your email</p>
+
+                        <form id="userAction" action="VerifyEmail.html" method="POST">
+                            <div class="userformdetails">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control inputField" id="floatingInput"
+                                        placeholder="Emial Address">
+                                    <label for="floatingInput">Email Address</label>
+                                </div>
+                            </div>
+                            <a href="UserName.html" class="backbrn backbrnwhi">Back</a>
+                            <!-- <a href="VerifyEmail.html" class="acceptbtn nextbtnwhi" id="emailFormSubmit">Next</a> -->
+                            <input type="submit" id="emailFormSubmit" class="acceptbtn nextbtnwhi" value="Next" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="sectionrightfix">
+
+        </div>
+    </section>
+
+    <script src="js/bootstrap.min.js" integrity="" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/custom.js"></script> 
+</body>
+
+</html>

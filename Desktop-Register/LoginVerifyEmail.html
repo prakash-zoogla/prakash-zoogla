@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/CustomStyle.css" rel="stylesheet">
+    <title>Desktop App</title>
+</head>
+
+<body>
+
+    <section class="commsectionfix">
+        <div class="sectionleftfix">
+            <div class="exactboxmed">
+                <div class="exactCenter">
+                    <div class="innerCommonBox">
+                        <img src="images/Email-icon.png" alt="Email" title="Email">
+                        <span class="innercomtitle">Security Code</span>
+                        <p class="innercomdetails">We’ve sent an email to <b>julian@fintory.com</b></p>
+
+                        <form>
+                            <div class="verifyformdetails">
+                                <div class="verifyform">
+                                    <input type="number" maxlength="1" id="a">
+                                    <input type="number" maxlength="1" id="b">
+                                    <input type="number" maxlength="1" id="c">
+                                    <input type="number" maxlength="1" id="d">
+                                </div>
+                                <div class="verifybottomlink">
+                                    <span>Didn’t get an email?
+                                        <a href="#">Resend Email</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="buttonform">
+                                <a href="Login.html" class="backbrn backbrnwhi">Back</a>
+                                <a href="RecoverEmail.html" class="acceptbtn nextbtnwhi">Next</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sectionrightfix">
+
+        </div>
+    </section>
+
+    <script src="js/bootstrap.min.js" integrity="" crossorigin="anonymous"></script>
+
+    <script>
+
+
+   
+        var a = document.getElementById("a"),
+            b = document.getElementById("b"),
+            c = document.getElementById("c"),
+            d = document.getElementById("d");
+        
+        a.onkeyup = function() {
+            if (this.value.length === parseInt(this.attributes["maxlength"].value)) {
+                b.focus();
+            }
+        }
+        
+        b.onkeyup = function() {
+            if (this.value.length === parseInt(this.attributes["maxlength"].value)) {
+                c.focus();
+            }
+            else if(event.key === "Backspace")
+            {
+              a.focus();
+            }
+        }
+        
+        c.onkeyup = function() {
+            if (this.value.length === parseInt(this.attributes["maxlength"].value)) {
+                d.focus();
+            }
+            else if(event.key === "Backspace")
+            {
+              b.focus();
+            }
+        }
+        
+        d.onkeyup = function() {
+            if(event.key === "Backspace")
+            {
+              c.focus();
+            }
+        }
+        
+          </script>
+
+
+</body>
+
+</html>

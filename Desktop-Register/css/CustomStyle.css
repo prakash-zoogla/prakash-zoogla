@@ -1,0 +1,396 @@
+body{
+    background:#E5E5E5;
+    padding:0;
+    margin:0;
+    font-family: 'Poppins'; 
+}
+/* width */
+::-webkit-scrollbar {
+  width:5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #EAE9ED; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #C0BCC8; 
+  border-radius: 5px;
+}
+
+.progress{
+    /* width:455px; */
+    width:100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgba(359,82,100, 10%);
+    height: 0.3rem;
+    border-radius: 10px 9px 0 0;
+    top: 0px;
+}
+.progress .progress-bar{
+    background-color: #FF2F32;
+    border-radius: 0 10px 10px 0;
+}
+.loginbottomlink,
+.verifybottomlink{
+    margin-top:20px;
+    font-size:16px;
+}
+.loginbottomlink span,
+.verifybottomlink span{
+    color:#2C1F47;
+}
+.loginbottomlink a,
+.verifybottomlink a{
+    color: #5601FF;
+    text-decoration:none;
+    padding-left:10px;
+}
+
+
+.exactboxmed{
+    height:100%;
+    width:100%;
+    position: relative;
+}
+.exactCenter {
+    position: fixed;
+    top: 50%;
+    left:25%;
+    transform: translate(-50%, -50%);
+    width:30%;
+}
+.innerCommonBox{
+    background: #FBFBFB;
+    border: 1px solid #EAE9ED;
+    border-radius: 8px;
+    box-shadow:0px 2px 4px rgb(0 44 75 / 24%);
+    margin: 0 auto;
+    padding:40px 40px;
+    display: inline-block;
+    width: 100%;
+}
+.innerCommonBox .innercomtitle{
+     color:#001026;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin:10px 0px;
+}
+.innerCommonBox .innercomdetails{
+     margin-top:0;
+    color:#564C6C;
+}
+.innerCommonBox .commonboxdetails b{
+    color:#000;
+    font-weight:normal;
+}
+.newpasswordsuccessfully .innercomdetails{
+    min-height:150px;
+}
+.buttonform{
+    width:100%;
+}
+
+.userformdetails{
+    margin-top:35px;
+    margin-bottom: 80px;
+}
+.userformdetails label{
+    color: #958EA2;
+}
+.userformdetails input[type="text"],
+.userformdetails input[type="email"],
+.userformdetails input[type="password"]{
+    border:1px solid #EAE9ED;
+    color:#2C1F47;
+    margin:15px 0;
+    border-radius: 8px;
+}
+.userformdetails input[type="text"]:focus,
+.userformdetails input[type="email"]:focus,
+.userformdetails input[type="password"]:focus{
+    border: 1px solid #5200FF;
+}
+.userformdetails input:focus{
+    outline:none;
+    box-shadow:none;
+}
+
+
+/* Terms & Conditions Start */
+.commsectionfix{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.sectionleftfix{
+    width:50%;
+    float: left;
+    text-align: center;
+    position: relative;
+    margin:60px 0 0 0;
+}
+.sectionrightfix{
+    /* width: 50%;
+    float: right;
+    background:url('../images/terms-conditions.jpg');
+    background-size: cover;
+    background-position: top right;
+    min-height:100%;
+    background-repeat:no-repeat; */
+    width: 50%;
+    float: right;
+    background:url('../images/terms-conditions.jpg');
+    min-height:100%;
+    background-color: #F53D77;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: right top;
+    min-width: 50%;
+    /* background-size: cover;
+    background-position: top right;
+    background-repeat:no-repeat; */
+}
+.sectionrightfix img{
+    width:100%;
+}
+.sectionleftfix .CommonBox{
+    /* width:67%; */
+    width:460px;
+    height: calc(100vh - 120px);
+}
+.CommonBox{
+    background: #FBFBFB;
+    border: 1px solid #EAE9ED;
+    border-radius: 8px;
+    box-shadow:0px 2px 4px rgb(0 44 75 / 24%);
+    margin: 0 auto;
+    padding:40px;
+    display: inline-block;
+}
+.CommonBox .commonboxtitle{
+    color:#001026;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin:10px 0px;
+}
+.CommonBox .commonboxdetails{
+    margin-top:0;
+    color:#564C6C;
+}
+.CommonBox .commonboxdetails b{
+    color:#000;
+    font-weight:normal;
+}
+.termsdetails p{
+    color:#564C6C;
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 16px;
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    padding-top:0;
+    margin:5px 0;
+}
+.termsdetails b{
+    font-weight:bold;
+    color: #564C6C;
+    text-align:left;
+    display:inherit;
+    margin-top:15px;
+
+}
+.acceptbtn{
+    color:#FFF;
+    background: #C0BCC8;
+    border-radius: 8px;
+    width:100%;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    padding:10px 0;
+    border:1px solid #C0BCC8;
+}
+.acceptbtn:hover,
+.backbrn:hover,
+.getstared{
+    background: #FF2F32;
+    color:#FFF;
+    border:1px solid #FF2F32;
+}
+.backbrn{
+    color:#FF2F32;
+    border:1px solid #FF2F32;
+    border-radius: 8px;
+    padding:10px 0;
+    margin-top: 20px;
+    text-decoration:none;
+}
+.backbrnwhi{
+    width:30%;
+    float: left;
+}
+.nextbtnwhi{
+    width:60%;
+    margin-left:10%;
+}
+.commonscroll{
+	/* height:240px; */
+	overflow-y: scroll;
+    height:64%;
+}
+
+@media only screen and (min-height: 800px) { 
+    .commonscroll, .formdetails{
+        height: 75%;
+    }
+}
+@media  screen and (max-width: 1366px) {
+    .commonscroll, .formdetails{
+        height: 55%;
+    }
+}
+/* Terms & Conditions End */
+.accountopened{
+     min-height:486px;
+     padding:40px 20px;
+}
+.accountopened img{
+    padding-bottom:50px;
+}
+.accountopened .commonboxdetails{
+   text-align: left;
+   min-height:186px;
+}
+.accountopened .getstared{
+    width:90%;
+}
+.form-floating i{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color:#C0BCC8;
+}
+
+.formdetails{
+    min-height:186px;
+    margin-top:30px;
+}
+.formdetails label{
+    color: #958EA2;
+}
+.formdetails input[type="text"],
+.formdetails input[type="email"],
+.formdetails input[type="number"],
+.formdetails input[type="password"]{
+    border:1px solid #EAE9ED;
+    color:#2C1F47;
+    margin:15px 0;
+    border-radius: 8px;
+}
+.formdetails input[type="text"]:focus,
+.formdetails input[type="email"]:focus,
+.formdetails input[type="number"]:focus,
+.formdetails input[type="password"]:focus{
+    border:1px solid #F53D77;
+}
+.verifyform input[type="text"]:focus,
+.verifyform input[type="text"]:focus-visible {
+    outline: 1px solid #5200FF;
+}
+.verifyform input[type="number"]:focus,
+.verifyform input[type="number"]:focus-visible {
+    outline: 1px solid #5200FF;
+}
+
+.formdetails input:focus{
+    outline:none;
+    box-shadow:none;
+}
+.verifyformdetails{
+    min-height:186px;
+    margin-top:15px;
+    display: inline-block;
+}
+.verifyform{
+    margin:0 auto;
+    width:100%;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.forgotpass{
+    color: #001026;
+    text-align: right;
+    text-decoration: unset;
+
+}
+.verifyform input[type="number"]{
+    width: 56px;
+    height: 56px;
+    background: #FFFFFF;
+    border: 1px solid #EAE9ED;
+    border-radius: 8px;
+    color:#2C1F47 !important;
+    margin:15px 12px;
+    float: left;
+    text-align: center !important;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+}
+/* .passwordformdetails{
+    min-height:220px;
+} */
+.passwordformdetails input[type="password"]{
+    margin: 15px 0 5px;
+}
+.passwordmsg{
+    list-style:none;
+    display:inline-flex;
+    text-align: left;
+    padding:0;
+}
+.passwordmsg li{
+    font-size:11px;
+    padding: 3px 5px;
+    border-radius: 30px;
+    margin: 0 3px;
+}
+.passwordmsg li:nth-child(1),
+.passwordmsg li:nth-child(2){
+    background:#FF2F32;
+    color:#FFFFFF;
+}
+.passwordmsg li:nth-child(3),
+.passwordmsg li:nth-child(4){
+    background:#EAE9ED;
+    color:#958EA2;
+    
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

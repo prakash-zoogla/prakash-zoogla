@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/CustomStyle.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title>Desktop App</title>
+</head>
+
+<body>
+
+    <section class="commsectionfix">
+        <div class="sectionleftfix">
+            <div class="exactboxmed">
+                <div class="exactCenter">
+                    <div class="innerCommonBox">
+                        <img src="images/Email-icon.png" alt="Email" title="Email">
+                        <span class="innercomtitle">Welcome Back</span>
+                        <p class="innercomdetails">Login into your account</p>
+                        <form>
+                            <div class="userformdetails">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control inputField" id="youremail"
+                                        placeholder="Your email">
+                                    <label for="youremail">Your email</label>
+                                </div>
+                                <div class="form-floating" id="show_hide_password">
+                                    <input type="password" class="form-control inputField" id="myInput"
+                                        placeholder="Password">
+                                    <label for="Password">Password</label>
+                                    <i class="fa fa-eye" aria-hidden="true" onclick="myFunction()"></i>
+                                </div>
+                                <div class="form-floating">
+                                    <a href="#" class="forgotpass" style="text-align: right;">Forgot password</a>
+                                </div>
+                            </div>
+                            <a href="LoginVerifyEmail.html" class="acceptbtn">Login</a>
+                        </form>
+                    </div>
+
+                    <div class="loginbottomlink">
+                        <span>Don't have account yet?
+                            <a href="UserName.html">Register</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sectionrightfix">
+
+        </div>
+    </section>
+
+    <script src="js/bootstrap.min.js" integrity="" crossorigin="anonymous"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+</body>
+
+</html>
